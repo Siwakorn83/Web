@@ -53,11 +53,12 @@ const submitData = async () => {
             password: passwordDOM.value,
         }
         console.log('submitData', userData);
-        
+        validateData(userData)
         let message = 'บันทึกข้อมูลเรียบร้อย'
         if(mode == 'CREATE'){
             const response = await axios.post(`${BASE_URL}/users`, userData)
             console.log('response', response.data);
+            window.location.href = `home.html`
         }else{
             const response = await axios.put(`${BASE_URL}/users/${selectedId}`, userData)
             message = 'แก้ไขข้อมูลเรียบร้อย'

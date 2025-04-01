@@ -1,12 +1,142 @@
-.room{
-    font-size: 100px;
-    font-weight: bold;
-    margin-bottom: 10px;
+/* ใช้ Flexbox เพื่อจัดตำแหน่งของ .room และองค์ประกอบอื่นๆ */
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
 }
-.table{
-    place-items: center;
-    width: 100%;
-    margin-top: 90px;
-    flex: 1;
+
+.room {
+    margin-left: 220px;
+    margin-top: 80px;
+    font-size: 30px;
+    color: rgb(25, 26, 27);
+    font-weight: bold;
+}
+
+.table {
     padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.containerA, .containerB {
+    display: flex;
+    border-radius: 8px;
+    margin-top: -20px;
+}
+.containerA {
+    margin-left: 200px;
+}
+.containerB {
+    margin-left: 120px;
+}
+
+/* สไตล์สำหรับตาราง */
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 80px;
+}
+
+/* สไตล์หัวตาราง */
+.modern-table thead {
+    background-color: #1338BE;
+    color: white;
+}
+
+.modern-table th {
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+/* สไตล์แถวของตาราง */
+.modern-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* สีพื้นหลังสลับแถว */
+.modern-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* เพิ่มเอฟเฟกต์ hover */
+.modern-table tbody tr:hover {
+    background-color: #ddd;
+}
+
+.edit {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    
+}
+
+.edit:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+.cancel {
+    background-color: #f44336; /* Red */
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.cancel:hover {
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+
+/* ปรับขนาด และ สีของ input type="date" */
+input[type="date"] {
+    padding: 8px 8px;
+    font-size: 14px;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+}
+
+/* เปลี่ยนสี border เมื่อ focus */
+input[type="date"]:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* ซ่อน default icon ของ browser */
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-clear-button {
+    display: none;
+}
+
+/* ปรับแต่งปุ่มปฏิทิน */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    background: url('https://cdn-icons-png.flaticon.com/512/747/747310.png') no-repeat center;
+    background-size: 20px 20px;
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+/* เปลี่ยนไอคอนปฏิทินเมื่อ hover */
+input[type="date"]:hover::-webkit-calendar-picker-indicator {
+    opacity: 1;
+    transform: scale(1.1);
+    color: #007bff;
 }

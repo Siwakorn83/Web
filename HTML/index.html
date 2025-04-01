@@ -3,45 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Sign In</title>
     <link rel="stylesheet" href="../Frontend/index.css">
 </head>
 <body>
     <div class="container">
-        <div class="headeer">
-            Sing In
+        <div class="left-panel">
+            <img src="../img/A.jpg" alt="Illustration" class="illustration">
         </div>
-        <div class="flex form-input">
-            <div class="header-from">ชื่อ</div>
-            <input class="From" name="firstname" type="text">
+        <div class="right-panel">
+            <h1>Sign In</h1>
+            <form><br><br><br><br><br>
+                <label for="firstname">ชื่อ</label>
+                <div class="form-group">
+                    <input class="form" id="firstname" name="firstname" type="text">
+                </div><br>
+                <label for="lastname">นามสกุล</label>
+                <div class="form-group">
+                    <input class="form" id="lastname" name="lastname" type="text">
+                </div><br>
+                <label for="password">Password</label>
+                <div class="form-group">
+                    <input class="form" id="password" name="password" type="password">
+                </div><br>
+                <div class="center">
+                    <button type="button" onclick="submitData()" class="btn">Sign In</button>
+                </div>
+                <br>
+                <div id="message" class="message"></div>
+            </form>
         </div>
-        <div class="flex form-input">
-            <div class="header-from">นามสกุล</div>
-            <input class="From" name="lastname" type="text">
-        </div>
-        <div class="flex form-input">
-            <div class="header-from">Password</div>
-            <input class="From" name="password" type="text">
-        </div>
-
-        <div id=message class="message"> </div>
-
-        <div class="center">
-            
-                <button onclick="submitData()" class="button">Sing In</button>
-            
-        </div>
-
-        <div>
-            <a href="home.html">
-                <button>HOME</button>
-            </a>
-        </div>
-
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <script src="../Javascript/index.js"></script>
-
 </body>
 </html>

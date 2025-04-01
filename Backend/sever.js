@@ -65,7 +65,7 @@ app.post('/users', async (req, res) => {
         const errors = validateData(user)
         if(errors.length > 0){
             throw {
-                message: 'Please fill in all required fields.',
+                message: ' ',
                 errors: errors
             }
         }

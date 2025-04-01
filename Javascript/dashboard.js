@@ -36,12 +36,11 @@ const loadData = async () => {
     let htmlData = `<table class="modern-table">
     <thead>
         <tr>
-            <th>Seat Number</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Start Time</th>
-            <th>End Time</th>
-            <th>Status</th>
+            <th>เลขที่นั่ง</th>
+            <th>ชื่อ</th>
+            <th>นามสกุล</th>
+            <th>วันที่</th>
+            <th>สถานะ</th>
         </tr>
     </thead>`
     
@@ -50,14 +49,12 @@ const loadData = async () => {
         let seatNumber = seats[reservation.seat_id] || 'ไม่พบที่นั่ง'; 
         let user = users[reservation.user_id] || { firstname: 'ไม่พบ', lastname: 'ผู้ใช้' }; 
         let formattedDate1 = new Date(reservation.start_time).toLocaleDateString('th-TH');
-        let formattedDate2 = new Date(reservation.end_time).toLocaleDateString('th-TH');
         
         htmlData += `<tr class='header1'>
             <td>${seatNumber}</td>
             <td>${user.firstname}</td>
             <td>${user.lastname}</td>
             <td>${formattedDate1}</td>
-            <td>${formattedDate2}</td>
             <td>${reservation.status}</td>
         </tr>`;
     }
