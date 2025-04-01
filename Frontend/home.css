@@ -1,0 +1,104 @@
+body{
+    background-color:rgb(238, 238, 238);
+    overflow-x: hidden;
+}
+.topbar {
+    background-color: rgb(255, 255, 255);
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+    margin-left: 10px;
+    border-bottom: 2px solid rgb(228, 228, 228);
+}
+.search-box {
+    width: 300px;
+    padding: 10px;
+    margin-left: 50px;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+}
+.search-box:focus {
+    border-color: rgb(172, 172, 172);
+    box-shadow: 0 0 5px rgba(190, 190, 190, 0.5);
+}
+.Booking {
+    background-color: #1338BE;
+    color:rgb(255, 255, 255);
+    padding: 10px;    
+    font-size: 14px;            
+    font-weight: bold;        
+    border-radius: 8px;                   
+    margin-left: 750px;
+}
+.navbar {
+    background-color: rgb(255, 255, 255);
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+    place-items: center;
+    font-size: 17px;
+}
+
+.navbar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;
+    
+}
+
+.navbar-menu li {
+    margin-bottom: 20px;
+    
+}
+
+.navbar-menu a {
+    color: rgb(119, 119, 119);
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-weight: bold;
+    transition: 0.3s ease; 
+}
+
+.navbar-menu a:hover {
+    transform: scale(1.1);
+}
+
+.logout {
+    list-style: none;
+    padding: 60px;
+    position: relative; 
+    top: -30px;
+}
+
+.logout a {
+    color: rgb(119, 119, 119);
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    font-weight: bold;
+    transition: 0.3s ease;
+     
+}
+
+.logout a:hover {
+    transform: scale(1.1);
+}
+h1 {
+    font-size: 30px;
+    color: #1338BE;
+}

@@ -1,0 +1,12 @@
+.room{
+    font-size: 100px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.table{
+    place-items: center;
+    width: 100%;
+    margin-top: 90px;
+    flex: 1;
+    padding: 20px;
+}

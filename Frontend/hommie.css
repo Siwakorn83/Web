@@ -1,0 +1,16 @@
+.welcome-message {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.welcome-description {
+    font-size: 16px;
+    color: #555;
+}
+.table{
+    place-items: center;
+    width: 100%;
+    margin-top: 90px;
+    flex: 1;
+    padding: 20px;
+}

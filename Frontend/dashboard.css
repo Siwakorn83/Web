@@ -1,0 +1,67 @@
+.table{
+    width: 100%;
+    margin-top: 90px;
+    flex: 1;
+    padding: 20px;
+    
+}
+.d{
+    margin-left: 200px;
+    margin-top: -20px;
+    font-size: 30px;
+    color:rgb(25, 26, 27);
+    font-weight: bold; 
+    
+}
+#reservation{
+    place-items: center;
+}
+.containerT{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:rgb(238, 238, 238);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: -100px;
+}
+/* สไตล์สำหรับตาราง */
+.modern-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* สไตล์หัวตาราง */
+.modern-table thead {
+    background-color: #007bff;
+    color: white;
+}
+
+.modern-table th {
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+/* สไตล์แถวของตาราง */
+.modern-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* สีพื้นหลังสลับแถว */
+.modern-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* เพิ่มเอฟเฟกต์ hover */
+.modern-table tbody tr:hover {
+    background-color: #ddd;
+}
